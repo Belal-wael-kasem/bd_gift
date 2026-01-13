@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Birthday Game for Doda</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      overflow: hidden;
+    }
+    h1 {
+      color: white;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+      margin: 10px;
+      text-align: center;
+    }
+    #score {
+      color: white;
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+    canvas {
+      border: 4px solid white;
+      border-radius: 10px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+      background: #2d3748;
+      touch-action: none; /* prevents scrolling on swipe */
+    }
+    button {
+      margin: 10px;
+      padding: 10px 25px;
+      font-size: 18px;
+      background: #48bb78;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: all 0.3s;
+    }
+    button:hover { background: #38a169; }
+    button:active { transform: translateY(0); }
+  </style>
+</head>
+<body>
+  <h1>🎂 Doda's Birthday Game 🎂</h1>
+  <div id="score">Score: 0</div>
+  <canvas id="game"></canvas>
+  <button id="startBtn">Start Game</button>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
